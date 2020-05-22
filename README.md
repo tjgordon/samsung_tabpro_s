@@ -12,6 +12,17 @@ A couple of items require some attention for this device
 
 ## Wi-Fi Firmware Install Script
 
+System updates regularly break the wireless firmware, requiring the user to again replace the installed firmware files with the ones from this repository as described above, so for the sake of convenience the script `install_ath10k.sh` is included:
+
+```sh
+#!/bin/sh
+
+# Delete default broken firmware files
+sudo rm /lib/firmware/ath10k/QCA6174/hw3.0/* 
+# Install the custom firmware files from this repository
+sudo cp ./ath10k/QCA6174/hw3.0/* /lib/firmware/ath10k/QCA6174/hw3.0/
+```
+
 
 ## Screen Brightness
 
