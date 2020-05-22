@@ -8,3 +8,13 @@ A couple of items require some attention for this device
 * TODO: There is an `SMO8A80` accelerometer which is visible through i2s; it should be leveraged to enable auto rotation
 * TODO: When disconnecting and reconnecting the dock, the touchpad on the dock stops working. Cause as of yet unknown, but likely an X or synaptics issue.
 * TODO: Buttons not tested yet, may or may not work.
+  
+
+## Wi-Fi Firmware Install Script
+
+
+## Screen Brightness
+
+The `oledbrightness` script included in this repository sets the screen brightness to match the desktop environment's brightness slider at the time. [`oled-linux`](https://github.com/lawleagle/oled-linux) is an alternative that continuously adjusts the screen brightness to match the slider. 
+
+
